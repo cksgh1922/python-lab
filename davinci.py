@@ -29,6 +29,6 @@ print(f"""
 숫자 추출 : {num_list}
 변환된 리스트 (+1/-1): {davinci_list}
 합이 0인 연속 부분 수열 목록 :""")
-#합이 0인 연속 부분 수열 목록
+#합이 0인 연속 부분 수열 목록 출력
 for item in subarray_list:
     print(f"- {item}")

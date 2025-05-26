@@ -27,7 +27,6 @@ for i in range(len(num_list)):
             count_list[i] += 1
 
 #출력문
-print(random_numlist)
 print(f"""
 고유 숫자 리스트 : {num_list}
 빈도 수 리스트 : {count_list}
@@ -39,7 +38,7 @@ for freq in count_list:
     if freq not in unique_freqs:
         unique_freqs.append(freq)
 
-# 내림차순으로 빈도수 뽑기 (max 없이 직접 수작업)
+# 내림차순으로 빈도수 뽑기
 sorted_freqs = []
 while unique_freqs:
     temp_max = unique_freqs[0]
@@ -69,4 +68,4 @@ print("가장 많이 등장한 숫자 Top 3 (동점 포함):")
 for freq in result_freqs:
     for idx, f in enumerate(count_list):
         if f == freq:
-            print(f"숫자 {num_list[idx]}: {f}회")
+            print(f"{num_list[idx]} -> {f}회")
