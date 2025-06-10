@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
-#상수 데이터 정의
+# 상수 데이터 정의
 X = [
     #클러스터 0
     (2.0,1.8),(1.8,2.2),(2.2,2.0),(1.9,2.1),(2.1,1.9),
@@ -12,13 +12,11 @@ X = [
     #클러스터 3
     (6.0,6.0),(5.9,6.2),(6.1,5.8),(5.8,5.9),(6.2,6.1)
     
-    
-    
 ]
-
+    
 #각 점이속한 군집 번호 정의
 cluster_labels = [0]*5 + [1]*5 + [2]*5 + [3]*5
- 
+
 x = [pt[0] for pt in X]
 y = [pt[1] for pt in X]
 
