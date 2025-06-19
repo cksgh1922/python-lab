@@ -14,7 +14,7 @@ def input_student(students):
         students[std_num]['total'] = students[std_num]['k-score']+students[std_num]['m-score']+students[std_num]['e-score']
         students[std_num]['avg'] = students[std_num]['total'] / 3
         print("성적이 저장되었습니다.")
-    
+
 #전체 학생 정보 출력
 def print_all_students(students):
     if not students:
